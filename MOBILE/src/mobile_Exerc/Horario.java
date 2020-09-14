@@ -2,9 +2,9 @@ package mobile_Exerc;
 
 public class Horario {
 	
-	private byte hora; 
-	private byte minuto;
-	private byte segundo;
+	byte hora; 
+	byte minuto;
+	byte segundo;
 	
 	public boolean ehUltimoSegundo() {
 		return hora == 23 && minuto == 59 && segundo == 59;
@@ -93,3 +93,5 @@ public class Horario {
 		
 	}
 }
+
+
