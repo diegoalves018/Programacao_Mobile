@@ -1,15 +1,21 @@
 package mobile_Exerc;
 
 public class Principal {
-	public static void main(String[] args) {
+
+	public static void main(String args[]) {
+		HorarioSeg h1 = new HorarioSeg();
+		HorarioSeg h2 = new HorarioSeg(58974);
+		HorarioSeg h3 = new HorarioSeg(86399);
 		
-		Relogio r = new Relogio(28, 2, 2001);
-		System.out.println(r);
+		System.out.println(h1);
+		System.out.println(h2);
+		System.out.println(h3);
 		
-		for(int i = 0; i < 86400 * 2; i++) {
-			r.tictac();
-			System.out.println(r);
-		}
+		System.out.println(h2.format("%H:%M:%S"));
+		
+		SerializeDemo.toFile("./horarioseg.ser", h2);
+		HorarioSeg h4 = SerializeDemo.fromFile("./horarioseg.ser");
+		System.out.println(h4.format("%H:%M:%S"));
 	}
 }
 
