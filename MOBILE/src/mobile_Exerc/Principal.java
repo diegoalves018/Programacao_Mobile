@@ -3,6 +3,7 @@ package mobile_Exerc;
 public class Principal {
 
 	public static void main(String args[]) {
+		
 		HorarioSeg h1 = new HorarioSeg();
 		HorarioSeg h2 = new HorarioSeg(58974);
 		HorarioSeg h3 = new HorarioSeg(86399);
