@@ -75,12 +75,12 @@ public class HorarioSeg implements Serializable {
 		return rp;
 	}
 	
-	public HorarioSeg adiciona(HorarioSeg outro) {
-		return new HorarioSeg(this.getTotalSeg() + outro.getTotalSeg());
+	public HorarioSeg adiciona(HorarioSeg a) {
+		return new HorarioSeg(this.getTotalSeg() + a.getTotalSeg());
 	}
 	
-	public HorarioSeg subtrai(HorarioSeg outro) {
-		return new HorarioSeg(this.getTotalSeg() - outro.getTotalSeg());
+	public HorarioSeg subtrai(HorarioSeg a) {
+		return new HorarioSeg(this.getTotalSeg() - a.getTotalSeg());
 	}
 	
 	public String toString() {
